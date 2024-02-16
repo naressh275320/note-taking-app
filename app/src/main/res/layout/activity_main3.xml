@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/notebook">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:text="NOTEPAD MADE EASY"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:background="#FFFAF0"
+        android:gravity="center"
+        />
+
+    <EditText
+        android:id="@+id/mtitle"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="80dp"
+        android:layout_alignTop="@+id/title"
+        android:hint="Enter the title: "
+        android:padding="8dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@color/white"
+        android:gravity="top"
+        android:textStyle="bold"
+        />
+
+    <EditText
+        android:id="@+id/mtext"
+        android:layout_width="match_parent"
+        android:layout_height="520dp"
+        android:layout_marginTop="60dp"
+        android:layout_alignTop="@+id/mtitle"
+        android:hint="Enter the text: "
+        android:padding="8dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@color/white"
+        android:gravity="top"
+        />
+
+    <Button
+        android:id="@+id/addnew"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="✓"
+        android:layout_alignTop="@+id/mtext"
+        android:layout_marginTop="530dp"
+        android:textSize="20dp"
+        android:layout_marginLeft="300dp"
+        />
+
+</RelativeLayout>
